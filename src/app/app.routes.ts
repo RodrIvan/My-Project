@@ -12,7 +12,7 @@ import { ProgressComponent } from './pages/progress/progress.component';
 import { ModuleWithProviders } from '@angular/compiler/src/core';
 
 const appRoutes: Routes = [
-    {
+     /*{
         path: '',
         component: PagesComponent,
         children: [
@@ -21,13 +21,14 @@ const appRoutes: Routes = [
             { path: 'graphic', component: GraphicComponent },
             { path: '', redirectTo: '/dashboard', pathMatch: 'full' }
         ]
-    },
+    }, */
     { path: 'login', component: LoginComponent },
     { path: 'register', component: RegisterComponent },
     { path: '**', component: NotfoundComponent }
 ];
-
+// inicializo rutas
 export const appRoutingProviders: any[] = [];
 
+// Declaro rutas gral con forRoot
 export const APP_ROUTES: ModuleWithProviders = RouterModule.forRoot(appRoutes, { useHash: true });
 // se debe cargar en el modulo toda definicion del Modulo -> RouteModule
